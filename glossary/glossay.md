@@ -1,4 +1,5 @@
 #GEOG 465 Glossary of Terms
+Put your descriptions below.
 
 ##ArcPy
 
