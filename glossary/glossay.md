@@ -32,3 +32,9 @@ It will try the user's answer to the prompt, for example, then if the users prom
 handle it as an error instead of the user's input breaking the code, and forcing the code to stop running. 
 
 #If/Else if/Else statements
+
+##With Statement
+The with statement is useful when there are two related operations that are executed as a pair, with a block of code between them. A simple example of a use of this statement is to open a file, manipulate it, then close the file:
+with open('output.txt', w) as f
+  f.write('Hello!')
+The above with statement will automatically close the file after the nested block of code. This is an advantage of with statements: the file is guaranteed to close, no matter how the nested block exits.
