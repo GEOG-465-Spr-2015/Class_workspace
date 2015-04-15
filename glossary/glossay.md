@@ -17,7 +17,10 @@ Put your descriptions below.
 ##Function
 
 ##Geoprocessing
-
+##Geoprocessing is a large variety of operations that uses input data to generate meaningful output data in ArcGIS (or other GIS softwares).
+##It deals with spatial data, with a geographic coordinate system.
+##An example is the use of the raster calculator/map algebra tool to generate a suitability model. For instance, to find ideal park sites, the following forumla can be used:
+Population Density > x * Distance to Parks < y = Ideal Park Sites
 ##Loop
 
 ##Software
