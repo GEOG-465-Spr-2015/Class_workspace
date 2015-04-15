@@ -24,7 +24,7 @@ Put your descriptions below.
 
 ##Try/Except
 ##Try/Except is a way to handle possible errors which the program or interface might experience. 
-##It will try the users answer to the prompt, for example, then if the users prompt is invalid it will
+##It will try the user's answer to the prompt, for example, then if the users prompt is invalid it will
 ##handle it as an error instead of the user's input breaking the code, and forcing the code to stop running. 
 
 #If/Else if/Else statements
