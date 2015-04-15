@@ -23,3 +23,6 @@ Put your descriptions below.
 ##Software
 
 ##Try/Except
+##Try/Except is a way to handle possible errors which the program or interface might experience. 
+##It will try the users answer to the prompt, for example, then if the users prompt is invalid it will
+##handle it as an error instead of the user's input breaking the code, and forcing the code to stop running. 
