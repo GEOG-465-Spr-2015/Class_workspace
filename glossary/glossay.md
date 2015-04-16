@@ -21,7 +21,9 @@ Geoprocessing is a large variety of operations that uses input data to generate 
 It deals with spatial data, with a geographic coordinate system.
 An example is the use of the raster calculator/map algebra tool to generate a suitability model. For instance, to find ideal park sites, the following formula can be used:
 
-<pre>Population Density > x * Distance to Parks < y = Ideal Park Sites</pre>
+```
+Population Density > x * Distance to Parks < y = Ideal Park Sites
+```
 
 ##Loop
 
@@ -41,7 +43,9 @@ handle it as an error instead of the user's input breaking the code, and forcing
 
 The with statement is useful when there are two related operations that are executed as a pair, with a block of code between them. A simple example of a use of this statement is to open a file, manipulate it, then close the file:
 
-<pre>with open('output.txt', w) as f
-  f.write('Hello!')</pre>
+```python
+with open('output.txt', w) as f
+  f.write('Hello!')
+```
 
 The above with statement will automatically close the file after the nested block of code. This is an advantage of with statements: the file is guaranteed to close, no matter how the nested block exits.
