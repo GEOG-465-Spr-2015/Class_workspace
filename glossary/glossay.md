@@ -10,6 +10,7 @@ ArcPy is a set of tools and arguments used by ESRI in order to execute geoproces
 ##Data
 
 ##Data types
+
 You can store numbers in one of four numeric data types:
 Short integer
 Long integer
