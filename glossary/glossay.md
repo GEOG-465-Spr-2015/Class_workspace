@@ -155,6 +155,10 @@ with open('output.txt', w) as f
 
 The above with statement will automatically close the file after the nested block of code. This is an advantage of with statements: the file is guaranteed to close, no matter how the nested block exits.
 
+##Split
+The split function separates a single string into a string array using a defined separator.
+If there is no separator defined, it will separate by space.
+ 
 ##STRIPS
 
 ##Read/Write Statements
