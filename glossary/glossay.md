@@ -2,7 +2,6 @@
 Put your descriptions below. IF you have never used markdown for formatting, check out [this resource](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
 
 ##ArcPy
-<<<<<<< HEAD
 ArcPy is a set of tools and arguments used by ESRI in order to execute geoprocessing functions.
 It is appendable to a classic Python script, and can be used inside and outside of ArcMap.
 To access it outside of ESRI products, use the code 'import arcpy'.
@@ -164,7 +163,8 @@ line = "a,b,c,d,5,6,7"
 list = line.split(",")
 
 print list
-print list[5]```
+print list[5]
+```
 
 The result should look like this
 ['a', 'b', 'c', 'd', '5', '6', '7']
