@@ -62,6 +62,40 @@ It will try the user's answer to the prompt, for example, then if the users prom
 handle it as an error instead of the user's input breaking the code, and forcing the code to stop running. 
 
 ##If/Else if/Else statements
+This is used to decide whether to do something at a special point, or to decide between two courses of action.
+The following test decides whether a student has passed an exam with a pass mark of 45
+
+```if (result >= 45)
+        printf("Pass\n");
+else
+        printf("Fail\n");```
+It is possible to use the if part without the else.
+
+```if (temperature < 0)
+        print("Frozen\n");```
+Each version consists of a test, (this is the bracketed statement following the if). If the test is true then the next statement is obeyed. If is is false then the statement following the else is obeyed if present. After this, the rest of the program continues as normal.
+If we wish to have more than one statement following the if or the else, they should be grouped together between curly brackets. Such a grouping is called a compound statement or a block.
+
+
+```if (result >= 45)
+{       printf("Passed\n");
+        printf("Congratulations\n")
+}
+else
+{       printf("Failed\n");
+        printf("Good luck in the resits\n");
+}```
+Sometimes we wish to make a multi-way decision based on several conditions. The most general way of doing this is by using the else if variant on the if statement. This works by cascading several comparisons. As soon as one of these gives a true result, the following statement or block is executed, and no further comparisons are performed. In the following example we are awarding grades depending on the exam result.
+
+```if (result >= 75)
+        printf("Passed: Grade A\n");
+else if (result >= 60)
+        printf("Passed: Grade B\n");
+else if (result >= 45)
+        printf("Passed: Grade C\n");
+else
+        printf("Failed\n");```
+In this example, all comparisons test a single variable called result. In other cases, each test may involve a different variable or some combination of tests. The same pattern can be used with more or fewer else if's, and the final lone else may be left out. It is up to the programmer to devise the correct structure for each programming problem.
 
 ##With Statement
 
