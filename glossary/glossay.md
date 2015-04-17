@@ -15,6 +15,18 @@ ArcPy is a set of tools and arguments used by ESRI in order to execute geoproces
 
 ##Function
 
+A function is a defined, organized, reusable block of code that performs a single, related action. Functions often take in values as parameters and return values as output. Functions are declared using the following syntax:
+
+```
+def myFunctionName(param1, param2):
+  function code goes here
+  return something, call another function, etc. 
+  
+outside the scope of the function
+```
+
+##List Comprehension
+
 ##Geoprocessing
 
 Geoprocessing is a large variety of operations that uses input data to generate meaningful output data in ArcGIS (or other GIS software).
