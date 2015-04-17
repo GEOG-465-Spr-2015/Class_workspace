@@ -3,14 +3,14 @@ Put your descriptions below. IF you have never used markdown for formatting, che
 
 ##ArcPy
 <<<<<<< HEAD
-##ArcPy is a set of tools and arguments used by ESRI in order to execute geoprocessing functions.
-##It is appendable to a classic Python script, and can be used inside and outside of ArcMap.
-##To access it outside of ESRI products, use the code 'import arcpy'.
-##It is used, in many cases, to automate iterative analysis
-##An example of arcpy use is creating a buffer around every single line that represents roads, in order to find
-##Potential risk areas for endangered snails.
-##You can use ArcPy in lieu of ArcModelBuilder
-##Below is an example of this:
+ArcPy is a set of tools and arguments used by ESRI in order to execute geoprocessing functions.
+It is appendable to a classic Python script, and can be used inside and outside of ArcMap.
+To access it outside of ESRI products, use the code 'import arcpy'.
+It is used, in many cases, to automate iterative analysis
+An example of arcpy use is creating a buffer around every single line that represents roads, in order to find
+Potential risk areas for endangered snails.
+You can use ArcPy in lieu of ArcModelBuilder
+Below is an example of this:
 ```
 # Name: Snap.py
 # Description: Snap climate regions boundary to vegetation layer
@@ -158,6 +158,17 @@ The above with statement will automatically close the file after the nested bloc
 ##Split
 The split function separates a single string into a string array using a defined separator.
 If there is no separator defined, it will separate by space.
+
+```python
+line = "a,b,c,d,5,6,7"
+list = line.split(",")
+
+print list
+print list[5]```
+
+The result should look like this
+['a', 'b', 'c', 'd', '5', '6', '7']
+6
  
 ##STRIPS
 
