@@ -10,14 +10,13 @@ ArcPy is a set of tools and arguments used by ESRI in order to execute geoproces
 ##Data
 
 ##Data types
-'''
 You can store numbers in one of four numeric data types:
 Short integer
 Long integer
 Float (single-precision floating-point numbers)
 Double (double-precision floating-point numbers)
 ##Control flow statements
-'''
+
 ##Function
 
 A function is a defined, organized, reusable block of code that performs a single, related action. Functions often take in values as parameters and return values as output. Functions are declared using the following syntax:
