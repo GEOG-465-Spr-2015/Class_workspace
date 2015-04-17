@@ -107,3 +107,5 @@ with open('output.txt', w) as f
 ```
 
 The above with statement will automatically close the file after the nested block of code. This is an advantage of with statements: the file is guaranteed to close, no matter how the nested block exits.
+
+##STRIPS
