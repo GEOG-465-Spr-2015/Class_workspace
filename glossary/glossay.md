@@ -11,6 +11,35 @@ Put your descriptions below. IF you have never used markdown for formatting, che
 ##Potential risk areas for endangered snails.
 ##You can use ArcPy in lieu of ArcModelBuilder
 ##Below is an example of this:
+```
+# Name: Snap.py
+# Description: Snap climate regions boundary to vegetation layer
+#              boundary to ensure common boundary is coincident
+
+
+# import system modules 
+import arcpy
+
+# Set environment settings
+arcpy.env.workspace = "C:/data"
+
+# Make backup copy of climate regions feature class, 
+# since modification with the Editing tools below is permanent
+climateBackup = "backups/climate.shp"
+arcpy.CopyFeatures_management('climate.shp', climateBackup)
+
+# Densify climate regions feature class to make sure there are enough
+#vertices to match detail of vegetation layer when layers are snapped
+arcpy.Densify_edit('climate.shp', "DISTANCE", "10 Feet") 
+
+# Snap climate regions feature class to  vegetation layer vertices and edge
+# first, snap climate region vertices to the nearest vegetation vertex within 30 Feet
+# second, snap climate region vertices to the nearest vegetation edge within 20 Feet
+
+snapEnv1 = ["Habitat_Analysis.gdb/vegtype", "VERTEX", "30 Feet"]    
+snapEnv2 = ["Habitat_Analysis.gdb/vegtype", "EDGE",   "20 Feet"]       
+arcpy.Snap_edit('climate.shp', [snapEnv1, snapEnv2])
+```
 =======
 
 ArcPy is a set of tools and arguments used by ESRI in order to execute geoprocessing functions. It is appendable to a classic Python script, and can be used inside and outside of ArcMap. To access it outside of ESRI products, use the code 'import arcpy'. It is used, in many cases, to automate iterative analysis
@@ -127,3 +156,5 @@ with open('output.txt', w) as f
 The above with statement will automatically close the file after the nested block of code. This is an advantage of with statements: the file is guaranteed to close, no matter how the nested block exits.
 
 ##STRIPS
+
+##Read/Write Statements
