@@ -76,9 +76,10 @@ outside the scope of the function
 A list comprehension is a compact way to map one list into another without changing the original list.
 The feature works by applying a function to each element of the list being mapped.
 This allows python to loop through the list one element at a time.
-In the process, python temporarily assigns the value of each of these elements to a designated variable (such as ï¿½elemï¿½) before applying a function (such as ï¿½elem*2ï¿½) and appending this result to the list that is returned.
+In the process, python temporarily assigns the value of each of these elements to a designated variable (such as “elem”) before applying a function (such as “elem*2”) and appending this result to the list that is returned.
 
 ```
+>>> list = [1, 2, 3, 4, 5, 10]
 >>> list
 [1, 2, 3, 4, 5, 10]
 >>> [elem*2 for elem in li]
@@ -91,7 +92,7 @@ One may also safely choose to assign the result of a list comprehension to the v
 >>> list = [1, 2, 3, 4, 5, 10]
 >>> list
 [1, 2, 3, 4, 5, 10]
->>> list = [elem*2 for elem in li]
+>>> list = [elem*2 for elem in list]
 >>> list
 [2, 4, 6, 8, 10, 20]
 ```
