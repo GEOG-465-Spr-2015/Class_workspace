@@ -73,6 +73,29 @@ outside the scope of the function
 
 ##List Comprehension
 
+A list comprehension is a compact way to map one list into another without changing the original list.
+The feature works by applying a function to each element of the list being mapped.
+This allows python to loop through the list one element at a time.
+In the process, python temporarily assigns the value of each of these elements to a designated variable (such as �elem�) before applying a function (such as �elem*2�) and appending this result to the list that is returned.
+
+```
+>>> list
+[1, 2, 3, 4, 5, 10]
+>>> [elem*2 for elem in li]
+[2, 4, 6, 8, 10, 20]
+```
+
+One may also safely choose to assign the result of a list comprehension to the variable being mapped.
+
+```
+>>> list = [1, 2, 3, 4, 5, 10]
+>>> list
+[1, 2, 3, 4, 5, 10]
+>>> list = [elem*2 for elem in li]
+>>> list
+[2, 4, 6, 8, 10, 20]
+```
+
 ##Geoprocessing
 
 Geoprocessing is a large variety of operations that uses input data to generate meaningful output data in ArcGIS (or other GIS software).
