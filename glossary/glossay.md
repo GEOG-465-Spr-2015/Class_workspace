@@ -218,3 +218,10 @@ The lambda function is able to utilize abbreviated syntax (it does not include p
 ```
 
 Utilization of lambda functions could be seen as advantageous in situations calling for one-time use of code, as it can prevent extraneous one-line functions.
+
+##Tuples 
+A tuple is a sequence of immutable Python objects. 
+Tuples are sequences, just like lists.
+The only difference is that tuples can't be changed i.e., tuples are immutable and tuples use parentheses and lists use square brackets.
+```tup1 = ();
+```tup1 = (50); 
