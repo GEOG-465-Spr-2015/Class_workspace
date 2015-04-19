@@ -48,6 +48,12 @@ ArcPy is a set of tools and arguments used by ESRI in order to execute geoproces
 
 ##Data
 
+Data is individual facts, statistics, or items of information. Additionally, operations can be performed on these characters or symbols by a computer.
+
+##Database
+
+A database is a systemized collection of data that can be accessed immediately and manipulated by a data-processing system for a specific purpose.
+
 ##Data types
 
 You can store numbers in one of four numeric data types: Short integer,Long integer, Float (single-precision floating-point numbers),Double (double-precision floating-point numbers)
