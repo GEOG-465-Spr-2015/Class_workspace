@@ -62,9 +62,9 @@ SHORT INTEGER:Integer
 First of all, control flow is the order in which the file will execute. Typically, this will be from the top to the bottom.
 
 Control flow statements alter the order in which the code is executed. These types of statements include
-	if/else statements
-	for loops
-	while loops
+	if/else statements,
+	for loops,
+	while loops,
 	break statements
 ```
 count=0
@@ -240,3 +240,5 @@ Tuples are sequences, just like lists.
 The only difference is that tuples can't be changed i.e., tuples are immutable and tuples use parentheses and lists use square brackets.
 ```tup1 = ();
 ```tup1 = (50); 
+
+##While Loops
