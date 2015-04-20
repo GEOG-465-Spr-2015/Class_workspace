@@ -59,6 +59,26 @@ SHORT INTEGER:Integer
 
 ##Control flow statements
 
+Control flow means controlling the flow of program execution to get desire result and it’s about controlling the program execution sequence.
+
+Example tool for flow control: if (condition)- if this is the case then do this 
+
+This control statement indicate that if something happens then do this. It’s a good way of handling some short conditions. 
+
+##len()
+
+Using len(some object)returns the number of top level items contained in the object being queried.
+
+Example:
+>>my_list=[1,2,3,4,5,6,7]
+>>len(my_list)
+7
+
+>>my_string=‘abcdef’
+>>len(my_string)
+6
+
+
 ##Function
 
 A function is a defined, organized, reusable block of code that performs a single, related action. Functions often take in values as parameters and return values as output. Functions are declared using the following syntax:
