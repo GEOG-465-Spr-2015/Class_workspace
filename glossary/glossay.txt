@@ -298,3 +298,5 @@ that can be called with arbitrary data values.
 	c = C()
 	c.my_method()  # Prints "I am a C"
 
+##TOPOLOGY
+Topology in GIS is a set of rules and beahviors that model how points, lines, and polygons share coincident geometry. The topology toolbar in ArcGIS can flag topology errors using the 'Topology Validation Tool' in the form of point errors, line errors, and area errors. These errors are recorded in an error feature table to be looked at.  Once looking at the recorded errors, the error can either be left alone, corrected, or flagged as an exception.  An example of how the topology validation tool in ArcGIS can be used is when aligning Urban Growth Area boundaries for the Central Puget Sound region from multiple municipalities (Pierce, King, Snohomish, and Kitsap Counties).  Because these boundaries are published by their respective jurisdictions, they may not line up with each other and with the water.  In this case, we would need the topology features of ArcGIS to flag where these gaps or overlaps of these shapefiles are in order to get an accurate geodatabase of the urban growth areas in the region.
