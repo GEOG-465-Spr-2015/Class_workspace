@@ -242,3 +242,13 @@ The only difference is that tuples can't be changed i.e., tuples are immutable a
 ```tup1 = (50); 
 
 ##While Loops
+Unlike for loops, while loops will continue to run while the condition still holds true.
+
+```
+list = ["a","b","c","d","e"]
+i=0
+while list[i]!="d":
+    print list[i]
+    i+=1
+```
+This while loop will run until the item in the list is not equal to the string, "d".
