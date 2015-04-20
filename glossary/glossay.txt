@@ -1,5 +1,5 @@
 #GEOG 465 Glossary of Terms
-Put your descriptions below. IF you have never used markdown for formatting, check out [this resource](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
+Put your descriptions below. If you have never used markdown for formatting, check out [this resource](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
 
 ##ArcPy
 ArcPy is a set of tools and arguments used by ESRI in order to execute geoprocessing functions.
@@ -134,8 +134,10 @@ else:
 ```
 ##Software 
 
-A Software is a information system used by a computer or a program to perform different tasks.It is a set of instructions for the computer or program to run when certain info is given to it.
-
+Software is a information system that uses a computer or other programs to perform tasks based on user input. Software contains blocks of code that are run when certain information is given to it. 
+To reference mathematics for a moment y = f(x) is the basic format for a function where x is the input, y is the output, and f is what modifies x to change it into y. 
+In computing x is a data set specified or entered by the user, y is what is produced by the software after it modifies the user input, and f is the software itself which is taking the users's input and producing y based on x. 
+In this way software is the layer between what the user tells the computer to do and what the computer actually does. 
 
 ##Try/Except
 
@@ -186,15 +188,15 @@ In this example, all comparisons test a single variable called result. In other 
 The with statement is useful when there are two related operations that are executed as a pair, with a block of code between them. A simple example of a use of this statement is to open a file, manipulate it, then close the file:
 
 ```python
-with open('output.txt', w) as f
-  f.write('Hello!')
+with open('output.txt','w') as myFile:
+  myFile.write('Hello!')  
 ```
 
 The above with statement will automatically close the file after the nested block of code. This is an advantage of with statements: the file is guaranteed to close, no matter how the nested block exits.
 
 ##Split
 The split function separates a single string into a string array using a defined separator.
-If there is no separator defined, it will separate by space.
+If there is no separator defined, it will separate by white space.
 
 ```python
 line = "a,b,c,d,5,6,7"
