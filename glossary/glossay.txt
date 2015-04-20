@@ -198,6 +198,30 @@ with open('output.txt','w') as myFile:
 
 The above with statement will automatically close the file after the nested block of code. This is an advantage of with statements: the file is guaranteed to close, no matter how the nested block exits.
 
+##CSV 
+
+CSV or comma-seperated value files are one of the most common formats for importing and exporting of spreadsheets and databases.
+In conjunction, WITH and SPLIT functions can be used to read a CSV file into a list seperated by the delimeter of the csv file (most commonly a comma).
+
+```python
+
+import csv
+
+#Open the first file for reading, and call it 'myFile'. Just put 'with' at the front.
+with open("C:/tmp/capitals.txt", "rb") as myFile:
+    #Open a new file for writing, and assign it to 'newFile'. Again, put 'with' in front.
+    with open("C:/tmp/csvFile.csv", "wb") as newFile:
+        #csv_writer will be the object that writes the rows later.
+        csv_writer = csv.writer(newFile, delimiter=",")
+        for line in myFile:
+            #split the line into a list of strings.
+            lineList = line.split(",")
+            if lineList[1][0]=="R":
+                #Write to the new file a list of the items at specific indices. writenow() only takes one argument so multiple arguments must be bracketed[].
+                csv_writer.writerow([lineList[1], lineList[3], lineList[5]])
+```
+
+
 ##Split
 The split function separates a single string into a string array using a defined separator.
 If there is no separator defined, it will separate by white space.
