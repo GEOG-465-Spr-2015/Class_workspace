@@ -65,6 +65,10 @@ OBJECTID: Long Integer
 SHORT INTEGER:Integer
 ```
 
+Data also comes in the form of Strings and Chars. A Char is any UTF-16 letter and is considered a primitive type. Char values can also be added to\
+Integers because they hold a numerical value (a=97, b=98, A=65, B=66). Strings are set of characters that show a word and is treated
+like an entire object, as opposed to a primitive type. You can call methods on strings (length, charAt)
+
 ##Control flow statements
 The information in program source files and scripts is usually executed from top to bottom in the order
 they are written. Control Statements break up this flow of execution by introducing structures such as
@@ -253,3 +257,20 @@ Utilization of lambda functions could be seen as advantageous in situations call
 In Python, a module file is a python file that contains definitions and statements that can be imported
 into other python (.py) files so that the module's functions, variables, and other important scripting
 details can be utilized within another script.
+
+##CLASS
+Fundamental method for Object-Orientated Programming. Creates an entire object with a set of of methods that are defined within the class
+that can be called with arbitrary data values. 
+	
+	*Methods* are essentially just functions that are listed in a class. The syntax is the same. 
+	
+	#Class defines methods inside of object
+	class C:
+    def my_method(self):
+        print "I am a C"
+
+		
+	#Create the 'C' Object and call the 'my_method' method
+	c = C()
+	c.my_method()  # Prints "I am a C"
+
