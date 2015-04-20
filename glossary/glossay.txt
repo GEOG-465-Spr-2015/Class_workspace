@@ -64,6 +64,9 @@ SHORT INTEGER:Integer
 ```
 
 ##Control flow statements
+The information in program source files and scripts is usually executed from top to bottom in the order
+they are written. Control Statements break up this flow of execution by introducing structures such as
+conditional statements, loops, and functions.
 
 ##Function
 
@@ -238,3 +241,8 @@ Lambda functions can be called through the variable to which it is assigned (tho
 ```
 
 Utilization of lambda functions could be seen as advantageous in situations calling for one-time use of code, as it can prevent extraneous one-line functions.
+
+##MODULES
+In Python, a module file is a python file that contains definitions and statements that can be imported
+into other python (.py) files so that the module's functions, variables, and other important scripting
+details can be utilized within another script.
