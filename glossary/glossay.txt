@@ -46,6 +46,8 @@ ArcPy is a set of tools and arguments used by ESRI in order to execute geoproces
 
 ##Code
 
+They are instructions written in a programming language by a programmer. These instructions allow the machine what the user/programmer wishes to execute and thus executes as commanded.
+
 ##Data
 
 Data is individual facts, statistics, or items of information. Additionally, operations can be performed on these characters or symbols by a computer.
