@@ -130,7 +130,10 @@ for x in xrange(3):
 else:
     print 'Final x = %d' % (x)
 ```
-##Software
+##Software 
+
+A Software is a information system used by a computer or a program to perform different tasks.It is a set of instructions for the computer or program to run when certain info is given to it.
+
 
 ##Try/Except
 
