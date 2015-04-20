@@ -59,6 +59,21 @@ SHORT INTEGER:Integer
 
 ##Control flow statements
 
+First of all, control flow is the order in which the file will execute. Typically, this will be from the top to the bottom.
+
+Control flow statements alter the order in which the code is executed. These types of statements include
+	if/else statements
+	for loops
+	while loops
+	break statements
+```
+count=0
+for i in 10:
+	count+=1
+print count
+```
+In this example, it will go through lines 1-3 directly, but since there is a for loop from lines 2-3, it will return to this loop rather than proceed onto line 4. Once the loop is complete, it will move on with the rest of the code.
+
 ##Function
 
 A function is a defined, organized, reusable block of code that performs a single, related action. Functions often take in values as parameters and return values as output. Functions are declared using the following syntax:
