@@ -123,7 +123,15 @@ Population Density > x * Distance to Parks < y = Ideal Park Sites
 ```
 
 ##Loop
-Piece of code which you want to repeat n number of times 
+Piece of code which you want to repeat n number of times. The two most common loops used in python is the while loop and the for loop.
+
+You would use the while loop if there was a condition that has to be met instead of a predefined number of times that you want the code to repeat. If the conditional statement evaluates to true, the code will not exit the loop
+
+```
+while password != "1234":
+    password = raw_input("password please:")
+print "welcome"
+```
 
 When you have a piece of code you want to run x number of times, then code within that code which you want to run y number of times, you use what is known as a "nested loop". 
 
