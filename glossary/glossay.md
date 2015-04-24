@@ -22,6 +22,11 @@ import arcpy
 # Set environment settings
 arcpy.env.workspace = "C:/data"
 
+Environment settings define additional rules for tools. Environment settings are different than 'normal' tool
+parameters because they are set once using a separate dialog box and are interrogated and used by tools when they are run.
+You can create environment settings for bothe the scratch & current workspace allowing for different output locations to
+contain different rules. Also, you can use these settings to be restricted to processing only what is shown in the extent.
+
 # Make backup copy of climate regions feature class, 
 # since modification with the Editing tools below is permanent
 climateBackup = "backups/climate.shp"
@@ -370,3 +375,10 @@ while list[i]!="d":
     i+=1
 ```
 This while loop will run until the item in the list is not equal to the string, "d".
+
+##VARIABLES
+Used to hold/represnt different types of values such as (but not limited to) dictionaries, functions & lists.
+They can look even as simple as the following:
+>>> x = 10
+>>> x
+10
