@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<db_schemas>
+  <db_schema>
+    <table name="BRIDGE">
+      <indices>
+        <index name="FDO_OBJECTID">
+          <field name="OBJECTID"/>
+        </index>
+      </indices>
+      <tolerance_xy>0x3F6AE067FBD97167</tolerance_xy>
+      <domain_minx>0xC19BEB7AB0000000</domain_minx>
+      <domain_maxx>0x4285801B58EBC783</domain_maxx>
+      <domain_miny>0xC197BB6A40000000</domain_miny>
+      <domain_maxy>0x42858023B90CA783</domain_maxy>
+      <sp_ind_grid_size_0>0x4081D000       0</sp_ind_grid_size_0>
+      <sp_ind_grid_count>1</sp_ind_grid_count>
+    </table>
+  </db_schema>
+</db_schemas>
